@@ -1,4 +1,3 @@
-
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
@@ -7,7 +6,10 @@ const path = require("path");
 
 const app = express();
 
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
+
 app.use(express.static(path.join(__dirname, "public")));
 
 
@@ -21,15 +23,27 @@ mongoose
   .catch((err) => console.log("MongoDB connection error:", err));
 
 
+
+
 const adminRoutes = require("./routes/admin");
 const apiRoutes = require("./routes/api");
 
-app.use("/admin", adminRoutes); 
-app.use("/api", apiRoutes); 
+
+app.use("/admin", adminRoutes);
+app.use("/api", apiRoutes);
 
 
 app.get("/", (req, res) => {
   res.redirect("/admin");
+});
+
+
+app.get("/test-css", (req, res) => {
+  res.send(`
+    <h1>CSS Test</h1>
+    <link rel="stylesheet" href="/styles.css">
+    <p>If the background turns yellow, your CSS is loading!</p>
+  `);
 });
 
 
