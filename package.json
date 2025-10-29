@@ -1,13 +1,14 @@
 {
-  "name": "express-assignment1",
+  "name": "jassignment1-arunkumar-kurakula",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Node.js Express assignment by Arun Kumar Kurakula",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arun Kumar Kurakula",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -18,3 +19,4 @@
     "mongoose": "^8.19.2"
   }
 }
+
