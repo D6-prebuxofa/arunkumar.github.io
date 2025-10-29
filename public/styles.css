@@ -1,11 +1,14 @@
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    background-color: #fffde7; 
-    color: #1b1b2f;            
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
+<<<<<<< HEAD
 
 h1, h2 {
     text-align: center;
@@ -43,62 +46,114 @@ button {
     border-radius: 5px;
     color: white;
     cursor: pointer;
+=======
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+>>>>>>> fd161a91ff406c3d384b02af209adaceacb7d69d
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: #26c6da; 
+a:hover {
+    color: #005fa3;
 }
 
 
+<<<<<<< HEAD
 table {
     width: 90%;
     margin: 0 auto 30px auto;
     border-collapse: collapse;
     background-color: #ffffff;
+=======
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0077cc;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+.box {
+    background-color: #e0f7fa;
+    padding: 15px;
+    margin: 15px;
+>>>>>>> fd161a91ff406c3d384b02af209adaceacb7d69d
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-th, td {
-    border: 1px solid #ffe0b2; 
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #ff9800; 
-    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
+.left, .centre, .right {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    th, td {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
+<<<<<<< HEAD
 
-    th::before, td::before {
-        position: absolute;
-        left: 15px;
-        width: 45%;
-        white-space: nowrap;
-        font-weight: bold;
-    }
+=======
+.left {
+    width: 20%;
+    float: left;
+}
 
-    tr {
-        margin-bottom: 15px;
-    }
+.centre {
+    width: 55%;
+    float: left;
+}
 
-    td::before {
-        content: attr(data-label);
-    }
+.right {
+    width: 20%;
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
+.legal {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+
+.lower_nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+>>>>>>> fd161a91ff406c3d384b02af209adaceacb7d69d
